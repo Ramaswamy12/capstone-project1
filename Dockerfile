@@ -1,7 +1,6 @@
 FROM node:14 AS build
 WORKDIR /app 
 RUN npm install
-CMD npm start
 COPY . .
 RUN npm run build
 EXPOSE 3000
